@@ -5,8 +5,10 @@ const alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m
 let input = readline.question('What phrase would you like to encrypt? ').toLowerCase();
 let shift = parseInt(readline.question('How many letters would you like to shift? '));
 
+// Array That Will Hold Letters of Encrypted Phrase
 let encryptedPhrase = [];
 
+// Function That is Responsible for Encrypting a Supplied Phrase
 function encrypt() {
     let phrase = input.split("");
     
